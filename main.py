@@ -1,5 +1,4 @@
-import sqlite3 , uuid , qrcode , cv2 , time
-
+import sqlite3 , uuid , qrcode , cv2
 
 "Print Debug Messages If Set To True"
 debug = True
