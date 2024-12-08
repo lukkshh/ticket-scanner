@@ -1,0 +1,5 @@
+/venv/
+.vscode
+*.db
+__pycache__
+*.png
