@@ -1,7 +1,7 @@
 /venv/
 .vscode
 *.db
-__pycache__
+
 *.png# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
