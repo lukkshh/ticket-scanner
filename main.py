@@ -152,6 +152,10 @@ def scan_qr_code():
 
                 cv2.putText(frame, text, (text_x, text_y), font, 1, (0, 0, 0), 2)
 
+                # Display the frame and wait for 2.5 seconds before scanning the next QR code
+                cv2.imshow('Ticket Scanner | Lukkshh', frame)
+                cv2.waitKey(2500)
+
             elif(ticket == 2):
                 frame[:] = (255, 0, 0)    
 
@@ -164,18 +168,28 @@ def scan_qr_code():
                 text_y = (frame.shape[0] + text_size[1]) // 2
 
                 cv2.putText(frame, text, (text_x, text_y), font, 1, (0, 0, 0), 2)
+            
+                # Display the frame and wait for 2.5 seconds before scanning the next QR code
+                cv2.imshow('Ticket Scanner | Lukkshh', frame)
+                cv2.waitKey(2500)
+            
             elif(ticket == 0):
+
                 frame[:] = (0, 0, 255)    
 
                 font = cv2.FONT_HERSHEY_SIMPLEX
                 text = "Ticket Doesn't Exist"
                 text_size = cv2.getTextSize(text, font, 1, 2)[0]
 
+                # Get the position to center the text
                 text_x = (frame.shape[1] - text_size[0]) // 2
                 text_y = (frame.shape[0] + text_size[1]) // 2
 
                 cv2.putText(frame, text, (text_x, text_y), font, 1, (0, 0, 0), 2)
-            
+
+                # Display the frame and wait for 2.5 seconds before scanning the next QR code
+                cv2.imshow('Ticket Scanner | Lukkshh', frame)
+                cv2.waitKey(2500)
 
         cv2.imshow('Ticket Scanner | Lukkshh', frame)
 
